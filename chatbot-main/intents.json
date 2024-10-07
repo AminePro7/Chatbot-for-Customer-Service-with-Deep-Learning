@@ -1,0 +1,1096 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Is anyone there?", "Good day", "How can I get support?"],
+            "responses": ["Hello, welcome to Oxilog's support! How can we assist you today?", "Hi there, thank you for contacting Oxilog. How can we help you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "Goodbye", "See you later", "Thanks, that's all I need"],
+            "responses": ["Goodbye, and thank you for choosing Oxilog. Feel free to reach out anytime you need support!", "See you later! Don't hesitate to contact us if you have more questions."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "I appreciate it"],
+            "responses": ["You're welcome!", "Happy to assist! If you have more questions, we're here to help.", "It's our pleasure to support your business."]
+        },
+        {
+            "tag": "ecommerce_purchase",
+            "patterns": ["How do I make a purchase?", "Can I buy products on your website?", "How does the online shopping process work?"],
+            "responses": ["You can browse our products on our website, add items to your cart, and proceed to checkout. We also offer a mobile app for a more personalized shopping experience. You can also buy on marketplaces like Amazon or eBay."]
+        },
+        {
+            "tag": "ecommerce_guest_checkout",
+            "patterns": ["Can I buy without creating an account?", "Is guest checkout possible?", "How can I checkout as a guest?"],
+            "responses": ["Yes, you can use our guest checkout option for quick and easy purchases without creating an account."]
+        },
+        {
+            "tag": "ecommerce_support_channels",
+            "patterns": ["What support channels do you offer?", "Can I get help via chat?", "Do you have phone support?"],
+            "responses": ["We offer support through multiple channels: live chat on our website, phone support, email assistance, social media, and a detailed FAQ section for common questions."]
+        },
+        {
+            "tag": "ecommerce_delivery_options",
+            "patterns": ["What delivery options do you have?", "Can you deliver to my address?", "Do you offer express delivery?"],
+            "responses": ["We offer various delivery options including standard and express home delivery, Click & Collect for in-store pickups, and delivery to automated lockers for convenient collection."]
+        },
+        {
+            "tag": "ecommerce_payment_options",
+            "patterns": ["What payment methods do you accept?", "Can I pay in installments?", "Is payment on delivery possible?"],
+            "responses": ["We accept various payment methods, including credit cards, PayPal, Apple Pay, Google Pay, payment on delivery, and installment plans for higher-value products."]
+        },
+        {
+            "tag": "ecommerce_order_tracking",
+            "patterns": ["How can I track my order?", "Can I see where my order is?", "What's the status of my order?"],
+            "responses": ["You can track your order in real-time by logging into your account on our website. We also send email updates at every stage of the delivery process."]
+        },
+        {
+            "tag": "ecommerce_order_cancellation",
+            "patterns": ["How can I cancel my order?", "I want to cancel my e-commerce order", "Can I get a refund for my purchase?"],
+            "responses": ["To cancel your order, please visit your account dashboard on our e-commerce platform and follow the cancellation process. Contact our support team if you need further assistance."]
+        },
+        {
+            "tag": "ecommerce_order_confirmation",
+            "patterns": ["Can you confirm my order?", "I didn't receive my order confirmation", "How do I check my order status?"],
+            "responses": ["Order confirmations are sent via email. If you haven't received yours, please contact our support team to verify your order status."]
+        },
+        {
+            "tag": "ecommerce_returns",
+            "patterns": ["How do I return a product?", "Can I get a refund?", "What's your return policy?"],
+            "responses": ["We offer a flexible return policy. Visit your account dashboard for detailed instructions on how to return items, or contact our support team for assistance."]
+        },
+        {
+            "tag": "ecommerce_return_shipping",
+            "patterns": ["Do I have to pay for return shipping?", "Is return shipping free?", "Who covers return costs?"],
+            "responses": ["Return shipping costs may vary based on the reason for return. Please refer to our return policy for specific details or contact support for more information."]
+        },
+        {
+            "tag": "ecommerce_return_status",
+            "patterns": ["What's the status of my return?", "Did you receive my returned item?", "Has my refund been processed?"],
+            "responses": ["You can check the status of your return in your account dashboard. If you have any questions, contact our support team for an update."]
+        },
+        {
+            "tag": "ecommerce_personalization",
+            "patterns": ["How do you personalize my shopping experience?", "Do you have product recommendations?", "How can I see personalized offers?"],
+            "responses": ["We use advanced algorithms to provide personalized product recommendations based on your shopping history and preferences. You can also join our loyalty program for exclusive offers and promotions."]
+        },
+        {
+            "tag": "ecommerce_reviews",
+            "patterns": ["Can I leave a review?", "How do I review a product?", "Can I see customer reviews?"],
+            "responses": ["Yes, you can leave a review on the product page after making a purchase. Customer reviews are also available to help you make informed buying decisions."]
+        },
+        {
+            "tag": "ecommerce_subscription",
+            "patterns": ["Do you offer subscriptions?", "Can I subscribe for monthly deliveries?", "How does your subscription service work?"],
+            "responses": ["Yes, we offer subscription services for select products. You can subscribe to monthly deliveries through your account settings."]
+        },
+        {
+            "tag": "ecommerce_gift_cards",
+            "patterns": ["Do you sell gift cards?", "How can I buy a gift card?", "Can I use a gift card for payment?"],
+            "responses": ["We offer gift cards that you can purchase on our website. These can be used as payment for any of our products."]
+        },
+        {
+            "tag": "ecommerce_loyalty_program",
+            "patterns": ["Do you have a loyalty program?", "How can I earn rewards?", "What are the benefits of your loyalty program?"],
+            "responses": ["Yes, we have a loyalty program where you can earn points for every purchase, which can be redeemed for discounts or special offers. Sign up through your account to start earning rewards."]
+        },
+        {
+            "tag": "ecommerce_marketplace_selling",
+            "patterns": ["Do you sell on marketplaces?", "Can I buy your products on Amazon?", "Do you sell on eBay?"],
+            "responses": ["Yes, our products are available on various marketplaces like Amazon and eBay. Check our store listings for more information."]
+        },
+        {
+            "tag": "ecommerce_promotions",
+            "patterns": ["Do you have any promotions?", "Are there discounts available?", "How can I get a promo code?"],
+            "responses": ["We regularly offer promotions and discounts. Sign up for our newsletter or check our website to stay updated on the latest offers and promo codes."]
+        },
+        {
+            "tag": "ecommerce_bulk_orders",
+            "patterns": ["Do you offer bulk purchase discounts?", "Can I place a large order?", "Is there a discount for bulk buying?"],
+            "responses": ["Yes, we offer special discounts for bulk purchases. Please contact our sales team for more information on bulk ordering and pricing."]
+        },
+        {
+            "tag": "ecommerce_preorders",
+            "patterns": ["Can I preorder products?", "How do preorders work?", "Is this product available for preorder?"],
+            "responses": ["Yes, you can preorder select products on our website. Preordered items will be shipped as soon as they become available."]
+        },
+        {
+            "tag": "banking_services",
+            "patterns": ["What banking services do you offer?", "Can you help with online banking?", "Do you support bank integrations?"],
+            "responses": ["We offer a range of banking services, including account opening, deposits, withdrawals, online banking, mobile banking, and personalized financial advice."]
+        },
+        {
+            "tag": "banking_account_opening",
+            "patterns": ["How can I open an account?", "What types of accounts do you offer?", "Can I open an account online?"],
+            "responses": ["You can open various types of accounts, such as checking, savings, and investment accounts. The process can be completed online or at one of our branches."]
+        },
+        {
+            "tag": "banking_account_types",
+            "patterns": ["What types of accounts do you have?", "Do you offer savings accounts?", "Can I open a business account?"],
+            "responses": ["We offer a variety of accounts including personal checking, savings, business accounts, and investment accounts. Visit our website or branch for more information."]
+        },
+        {
+            "tag": "banking_online_services",
+            "patterns": ["How can I use online banking?", "Do you have a banking app?", "Can I access my account online?"],
+            "responses": ["Our online banking platform allows you to manage your accounts, make payments, and view statements. We also provide a mobile banking app for easy access to your services at any time."]
+        },
+        {
+            "tag": "banking_deposits_withdrawals",
+            "patterns": ["How do I deposit money?", "Can I withdraw money from my account?", "Where can I find an ATM?"],
+            "responses": ["You can deposit and withdraw money at our branches or use our ATMs for convenient access. For large transactions, please visit one of our branches."]
+        },
+        {
+            "tag": "banking_support_channels",
+            "patterns": ["How can I contact banking support?", "What's your banking support phone number?", "Do you offer 24/7 support?"],
+            "responses": ["Our banking support team is available 24/7. You can contact us via phone, email, or chat. We also provide assistance through our chatbot for common inquiries."]
+        },
+        {
+            "tag": "banking_loan_services",
+            "patterns": ["How do I apply for a loan?", "Can I get a personal loan?", "What loans do you offer?"],
+            "responses": ["We offer various loan options, including personal loans, auto loans, and mortgages. Contact our financial advisors for detailed information and assistance with the application process."]
+        },
+        {
+            "tag": "banking_investment_advice",
+            "patterns": ["Can I get investment advice?", "Do you offer wealth management services?", "How can I invest my money?"],
+            "responses": ["Yes, we provide investment and wealth management services. Our financial advisors can help you plan your investments based on your goals and risk tolerance."]
+        },
+        {
+            "tag": "banking_security",
+            "patterns": ["Is online banking secure?", "Do you use two-factor authentication?", "How do you protect my data?"],
+            "responses": ["Your security is our priority. We use advanced encryption protocols, two-factor authentication, and regular system monitoring to protect your online banking activities."]
+        },
+        {
+            "tag": "banking_card_services",
+            "patterns": ["How do I apply for a credit card?", "Can I manage my card online?", "What types of cards do you offer?"],
+            "responses": ["We offer various card options, including credit, debit, and prepaid cards. You can apply through our website and manage your card settings via our mobile app."]
+        },
+        {
+            "tag": "banking_incidents",
+            "patterns": ["How do I report a lost card?", "What if I suspect fraud?", "How do I block my card?"],
+            "responses": ["If your card is lost or stolen, contact us immediately to block the card. You can also report fraudulent transactions through our online banking portal or mobile app."]
+        },
+        {
+            "tag": "banking_fraud_prevention",
+            "patterns": ["How do you prevent fraud?", "What security measures are in place?", "Do you offer fraud alerts?"],
+            "responses": ["We have robust fraud prevention measures including transaction monitoring, alerts for suspicious activities, and an immediate card blocking service if fraud is suspected."]
+        },
+        {
+            "tag": "banking_foreign_exchange",
+            "patterns": ["Do you offer foreign exchange services?", "Can I exchange currency?", "What are the exchange rates?"],
+            "responses": ["Yes, we offer foreign exchange services at competitive rates. You can exchange currency at our branches or use our online banking platform for certain transactions."]
+        },
+        {
+            "tag": "banking_loan_calculator",
+            "patterns": ["Do you have a loan calculator?", "How can I calculate my loan payments?", "What's the interest on my loan?"],
+            "responses": ["You can use our online loan calculator to estimate your monthly payments and interest rates. Visit our website to access this tool."]
+        },
+        {
+            "tag": "banking_transfer_services",
+            "patterns": ["How do I transfer money?", "Can I make an international transfer?", "What are the transfer fees?"],
+            "responses": ["You can transfer money using our online banking platform, mobile app, or at a branch. International transfers may involve additional fees, which will be displayed before you complete the transaction."]
+        },
+        {
+            "tag": "technical_support",
+            "patterns": ["I need technical support", "How do I fix this issue?", "Can you help with a technical problem?"],
+            "responses": ["Please provide more details about the issue you're experiencing. We offer technical support via phone, chat, email, and social media to help troubleshoot and resolve problems."]
+        },
+        {
+            "tag": "technical_remote_support",
+            "patterns": ["Can you provide remote support?", "Do you offer remote troubleshooting?", "How can you fix my issue remotely?"],
+            "responses": ["Yes, we offer remote support. Our technicians can guide you through the troubleshooting process via phone or chat, or take control of your system remotely to resolve the issue."]
+        },
+        {
+            "tag": "technical_in_store_support",
+            "patterns": ["Can I bring my device for repair?", "Do you offer in-store support?", "Where can I get my device fixed?"],
+            "responses": ["You can bring your device to one of our service centers for inspection or repair. Contact our support team to find the nearest location and schedule an appointment."]
+        },
+        {
+            "tag": "technical_guides",
+            "patterns": ["Do you have a user guide?", "Where can I find a troubleshooting guide?", "Can you help me use this product?"],
+            "responses": ["We provide detailed user guides and troubleshooting resources on our website. For personalized assistance, our support team is ready to help."]
+        },
+        {
+            "tag": "technical_preventive_maintenance",
+            "patterns": ["Do you offer preventive maintenance?", "Can I get regular system checks?", "How do you handle software updates?"],
+            "responses": ["We offer preventive maintenance, including software updates and regular system checks. We also send notifications for available updates to keep your system secure and efficient."]
+        },
+        {
+            "tag": "technical_ticket_system",
+            "patterns": ["How do I submit a support ticket?", "Can I track my support request?", "How do I follow up on my issue?"],
+            "responses": ["You can submit a support ticket through our online portal. Each ticket will have a unique ID for you to track its status. Our team will keep you updated on the progress."]
+        },
+        {
+            "tag": "technical_hardware_issues",
+            "patterns": ["My device is not working", "How do I fix my hardware?", "Can you help with hardware problems?"],
+            "responses": ["For hardware-related issues, please contact our support team. If needed, we can arrange an in-store inspection or guide you through a troubleshooting process remotely."]
+        },
+        {
+            "tag": "technical_installations",
+            "patterns": ["Can you help with software installation?", "How do I install this program?", "Do you offer installation services?"],
+            "responses": ["Yes, we can assist with software installations. Our technicians can guide you through the process remotely or arrange an in-store setup if required."]
+        },
+        {
+            "tag": "technical_network_issues",
+            "patterns": ["My internet is not working", "How do I fix network problems?", "Is there a network outage?"],
+            "responses": ["If you're experiencing network issues, please restart your modem and router. If the problem persists, contact our technical support team for further assistance."]
+        },
+        {
+            "tag": "technical_emergency_support",
+            "patterns": ["I need urgent help", "My system crashed", "Do you offer emergency support?"],
+            "responses": ["For urgent technical issues, please contact our 24/7 emergency support hotline immediately. We will prioritize your request to minimize any downtime."]
+        },
+        {
+            "tag": "technical_backup_services",
+            "patterns": ["Do you offer data backup?", "How can I back up my data?", "Can you help with data recovery?"],
+            "responses": ["Yes, we offer data backup and recovery services. Contact our technical support team to learn more about setting up automatic backups and recovering lost data."]
+        },
+        {
+            "tag": "technical_system_upgrades",
+            "patterns": ["Can you help upgrade my system?", "How do I upgrade my software?", "Do you offer hardware upgrades?"],
+            "responses": ["We offer both software and hardware upgrade services. Our technicians can guide you through the process remotely or schedule an in-store upgrade."]
+        },
+        {
+            "tag": "ecommerce_account_management",
+            "patterns": ["How do I update my account information?", "Can I change my email address?", "How do I reset my password?"],
+            "responses": ["You can update your account details by logging in and navigating to the 'Account Settings' section. For password resets, use the 'Forgot Password' link on the login page."]
+        },
+        {
+            "tag": "ecommerce_product_availability",
+            "patterns": ["Is this product in stock?", "When will this item be back in stock?", "Do you have this product available?"],
+            "responses": ["Product availability can be checked directly on the product page. If an item is out of stock, you can sign up for notifications to be informed when it's back."]
+        },
+        {
+            "tag": "ecommerce_custom_orders",
+            "patterns": ["Can I place a custom order?", "Do you offer personalized products?", "How do I request a custom product?"],
+            "responses": ["Yes, we offer customization options for select products. Visit the product page to see available customization features or contact our support team for special requests."]
+        },
+        {
+            "tag": "banking_fees_charges",
+            "patterns": ["What are your fees?", "Do you charge for ATM withdrawals?", "Are there fees for international transfers?"],
+            "responses": ["We have a transparent fee structure. Please visit our website or contact our support team for a detailed breakdown of our service charges."]
+        },
+        {
+            "tag": "banking_interest_rates",
+            "patterns": ["What are your current interest rates?", "Do you offer fixed interest rates?", "How is interest calculated on my account?"],
+            "responses": ["Our interest rates vary depending on the type of account or loan. You can find the latest rates on our website or speak with a financial advisor for personalized information."]
+        },
+        {
+            "tag": "banking_account_closure",
+            "patterns": ["How do I close my account?", "Can I close my account online?", "What happens to my funds when I close my account?"],
+            "responses": ["To close your account, please visit one of our branches or contact our customer support. Ensure all pending transactions are completed before initiating the closure."]
+        },
+        {
+            "tag": "technical_password_reset",
+            "patterns": ["How do I reset my password?", "I forgot my password", "Can you help me recover my password?"],
+            "responses": ["You can reset your password by clicking on the 'Forgot Password' link on the login page. Follow the instructions sent to your registered email address to set a new password."]
+        },
+        {
+            "tag": "technical_software_updates",
+            "patterns": ["How do I update my software?", "Is there a new software version?", "Can you help me install updates?"],
+            "responses": ["You can check for software updates through the 'Settings' menu of your application. For further assistance with updates, contact our support team."]
+        },
+        {
+            "tag": "ecommerce_fraud_detection",
+            "patterns": ["How do you handle online fraud?", "What if my payment is compromised?", "Is my personal information secure?"],
+            "responses": ["We employ advanced fraud detection measures to protect your transactions. If you suspect fraudulent activity, please contact our support team immediately."]
+        },
+        {
+            "tag": "ecommerce_wishlist_management",
+            "patterns": ["How do I add items to my wishlist?", "Can I save products for later?", "Where can I view my wishlist?"],
+            "responses": ["You can add products to your wishlist by clicking the 'Add to Wishlist' button on the product page. View your wishlist under your account settings for easy access to saved items."]
+        },
+        {
+            "tag": "banking_transaction_history",
+            "patterns": ["How can I view my transaction history?", "Can I download my bank statement?", "Where do I find my recent transactions?"],
+            "responses": ["You can view and download your transaction history through our online banking platform or mobile app. Visit the 'Transactions' or 'Statements' section for detailed records."]
+        },
+        {
+            "tag": "technical_troubleshooting",
+            "patterns": ["My application is not responding", "How do I fix this error?", "Why is my device freezing?"],
+            "responses": ["Try restarting your device and closing any unused applications. If the problem persists, refer to our troubleshooting guide or contact our technical support team."]
+        },
+        {
+            "tag": "banking_automatic_payments",
+            "patterns": ["How do I set up automatic payments?", "Can I schedule bill payments?", "How do I manage recurring payments?"],
+            "responses": ["You can set up and manage automatic payments through our online banking platform. Go to the 'Payments' section to schedule recurring payments for your bills and subscriptions."]
+        },
+        {
+            "tag": "ecommerce_product_recommendations",
+            "patterns": ["Can you suggest products for me?", "What products would you recommend?", "Do you have product recommendations based on my history?"],
+            "responses": ["We offer personalized product recommendations based on your browsing and purchase history. Check out the 'Recommended for You' section on our homepage for tailored suggestions."]
+        },
+        {
+            "tag": "banking_credit_score",
+            "patterns": ["How can I check my credit score?", "Does opening an account affect my credit?", "Do you offer credit score monitoring?"],
+            "responses": ["You can monitor your credit score through our online banking platform. We offer tools and resources to help you understand and manage your credit."]
+        },
+        {
+            "tag": "ecommerce_product_comparison",
+            "patterns": ["Can I compare products?", "How do I compare two items?", "Do you have a product comparison feature?"],
+            "responses": ["Yes, our website offers a product comparison tool that allows you to compare features, specifications, and prices of different products to help you make an informed decision."]
+        },
+        {
+            "tag": "ecommerce_cart_management",
+            "patterns": ["How do I remove items from my cart?", "Can I save my cart for later?", "Why can't I see my cart items?"],
+            "responses": ["To remove items from your cart, go to the cart page and click the 'Remove' button next to the item. You can save your cart by logging into your account, so your items are ready when you return."]
+        },
+        {
+            "tag": "ecommerce_customer_support_hours",
+            "patterns": ["When is customer support available?", "What are your support hours?", "Can I contact support on weekends?"],
+            "responses": ["Our customer support is available 24/7 to assist you. You can reach us via phone, live chat, or email at any time, including weekends and holidays."]
+        },
+        {
+            "tag": "ecommerce_loyalty_points",
+            "patterns": ["How do I redeem my loyalty points?", "Can I use my points for discounts?", "Where can I check my loyalty points balance?"],
+            "responses": ["You can redeem your loyalty points at checkout for discounts on your purchase. Check your points balance in your account dashboard under the 'Loyalty Program' section."]
+        },
+        {
+            "tag": "ecommerce_subscription_management",
+            "patterns": ["How do I cancel my subscription?", "Can I change my subscription plan?", "Where do I manage my subscriptions?"],
+            "responses": ["You can manage your subscriptions through your account settings. To cancel or modify your plan, visit the 'Subscriptions' section and follow the instructions provided."]
+        },
+        {
+            "tag": "banking_account_verification",
+            "patterns": ["How do I verify my account?", "What documents are required for verification?", "Can I verify my account online?"],
+            "responses": ["To verify your account, you need to provide identification documents such as a passport or driver's license. Upload your documents via our online banking platform or visit a branch for assistance."]
+        },
+        {
+            "tag": "banking_account_statements",
+            "patterns": ["How do I get my account statement?", "Can I download my statement online?", "When will my monthly statement be available?"],
+            "responses": ["You can download your account statements from our online banking platform. Monthly statements are usually available at the start of each month in the 'Statements' section."]
+        },
+        {
+            "tag": "technical_firewall_settings",
+            "patterns": ["How do I configure my firewall?", "Can you help with firewall settings?", "My firewall is blocking a program, what should I do?"],
+            "responses": ["To configure your firewall, access the settings through your security software. If you need help, our technical support team can guide you through the process to ensure optimal protection."]
+        },
+        {
+            "tag": "ecommerce_discount_codes",
+            "patterns": ["How do I use a discount code?", "Where can I find promo codes?", "My discount code isn't working, what should I do?"],
+            "responses": ["To use a discount code, enter it in the 'Promo Code' field during checkout. If your code isn't working, please check its expiration date or contact our support team for assistance."]
+        },
+        {
+            "tag": "ecommerce_payment_security",
+            "patterns": ["Is my payment information secure?", "How do you protect my credit card details?", "Do you offer secure checkout?"],
+            "responses": ["Your payment security is our priority. We use encryption and secure payment gateways to protect your credit card details during the checkout process."]
+        },
+        {
+            "tag": "banking_mobile_check_deposit",
+            "patterns": ["Can I deposit a check using my phone?", "How do I use mobile check deposit?", "Is mobile check deposit available in your app?"],
+            "responses": ["Yes, you can deposit checks using our mobile banking app. Simply select 'Deposit Check' from the app menu and follow the on-screen instructions to complete your deposit."]
+        },
+        {
+            "tag": "ecommerce_technical_difficulties",
+            "patterns": ["Why is your website not loading?", "I'm having trouble placing an order", "Is there an issue with your site?"],
+            "responses": ["We apologize for the inconvenience. Please try refreshing the page or clearing your browser's cache. If the issue persists, contact our technical support for further assistance."]
+        },
+        {
+            "tag": "banking_debit_card_pin",
+            "patterns": ["How do I set my debit card PIN?", "Can I change my card PIN?", "I forgot my debit card PIN, what should I do?"],
+            "responses": ["You can set or change your debit card PIN via our mobile banking app or at any ATM. If you have forgotten your PIN, please contact our support team for assistance."]
+        },
+        {
+            "tag": "ecommerce_product_warranty",
+            "patterns": ["Does this product come with a warranty?", "How do I claim my warranty?", "What is your product warranty policy?"],
+            "responses": ["Most of our products come with a warranty. You can find warranty details on the product page. To claim a warranty, contact our support team with your order details and issue description."]
+        },
+        {
+            "tag": "banking_money_transfer_limits",
+            "patterns": ["What are the transfer limits?", "Can I increase my transfer limit?", "How much can I transfer in a day?"],
+            "responses": ["Transfer limits vary based on account type and verification status. Visit your account settings to view or request an increase in your transfer limits."]
+        },
+        {
+            "tag": "technical_account_security",
+            "patterns": ["How do I secure my account?", "Can you help with two-factor authentication?", "What should I do if my account is compromised?"],
+            "responses": ["To secure your account, enable two-factor authentication and use a strong password. If you suspect your account is compromised, reset your password immediately and contact our support team."]
+        },
+        {
+            "tag": "ecommerce_gift_wrapping",
+            "patterns": ["Do you offer gift wrapping?", "Can I add a gift message?", "Is gift packaging available?"],
+            "responses": ["Yes, we offer gift wrapping and personalized messages for your orders. You can select these options during the checkout process."]
+        },
+        {
+            "tag": "banking_international_services",
+            "patterns": ["Can I use my card abroad?", "Do you offer international banking services?", "Are there fees for international transactions?"],
+            "responses": ["Yes, you can use your card abroad. We offer various international banking services, including global transfers. International transaction fees may apply, which you can find in our fee schedule."]
+        },
+        {
+            "tag": "technical_software_compatibility",
+            "patterns": ["Is this software compatible with my system?", "What are the system requirements?", "Can I run this program on my device?"],
+            "responses": ["You can find the software compatibility and system requirements on the product page. If you need further assistance, contact our support team to verify compatibility with your device."]
+        },
+        {
+            "tag": "ecommerce_feedback",
+            "patterns": ["How do I provide feedback?", "Can I leave a suggestion?", "Where can I submit my feedback?"],
+            "responses": ["We value your feedback! You can provide feedback through our website's contact form or by leaving a review on the product page."]
+        },
+        {
+            "tag": "banking_account_transfer",
+            "patterns": ["How do I transfer funds between my accounts?", "Can I set up automatic transfers?", "What are the steps for internal transfers?"],
+            "responses": ["To transfer funds between your accounts, log in to your online banking and select 'Transfer Funds.' You can also set up automatic transfers in your account settings."]
+        },
+         {
+            "tag": "salutation",
+            "patterns": ["Bonjour", "Salut", "Quelqu'un est là ?", "Bonne journée", "Comment puis-je obtenir de l'aide ?"],
+            "responses": ["Bonjour, bienvenue au support d'Oxilog ! Comment pouvons-nous vous aider aujourd'hui ?", "Salut, merci de contacter Oxilog. Comment pouvons-nous vous aider ?"]
+        },
+        {
+            "tag": "au_revoir",
+            "patterns": ["Au revoir", "Adieu", "À plus tard", "Merci, c'est tout ce dont j'ai besoin"],
+            "responses": ["Au revoir et merci d'avoir choisi Oxilog. N'hésitez pas à nous contacter si vous avez besoin d'aide !", "À plus tard ! N'hésitez pas à nous contacter si vous avez d'autres questions."]
+        },
+        {
+            "tag": "remerciement",
+            "patterns": ["Merci", "Je vous remercie", "C'est utile", "Je l'apprécie"],
+            "responses": ["De rien !", "Heureux de pouvoir vous aider ! Si vous avez d'autres questions, nous sommes là pour vous.", "C'est un plaisir de soutenir votre entreprise."]
+        },
+        {
+            "tag": "achat_ecommerce",
+            "patterns": ["Comment puis-je faire un achat ?", "Puis-je acheter des produits sur votre site ?", "Comment fonctionne le processus d'achat en ligne ?"],
+            "responses": ["Vous pouvez parcourir nos produits sur notre site, ajouter des articles à votre panier et procéder au paiement. Nous proposons également une application mobile pour une expérience d'achat personnalisée. Vous pouvez également acheter sur des places de marché comme Amazon ou eBay."]
+        },
+        {
+            "tag": "achat_invite_ecommerce",
+            "patterns": ["Puis-je acheter sans créer de compte ?", "L'achat en tant qu'invité est-il possible ?", "Comment puis-je acheter en tant qu'invité ?"],
+            "responses": ["Oui, vous pouvez utiliser notre option d'achat en tant qu'invité pour des achats rapides et faciles sans créer de compte."]
+        },
+        {
+            "tag": "canaux_support_ecommerce",
+            "patterns": ["Quels sont les canaux de support que vous proposez ?", "Puis-je obtenir de l'aide via chat ?", "Avez-vous un support téléphonique ?"],
+            "responses": ["Nous offrons un support via plusieurs canaux : chat en direct sur notre site web, support téléphonique, assistance par e-mail, réseaux sociaux, et une section FAQ détaillée pour les questions courantes."]
+        },
+        {
+            "tag": "options_livraison_ecommerce",
+            "patterns": ["Quelles sont les options de livraison ?", "Pouvez-vous livrer à mon adresse ?", "Proposez-vous une livraison express ?"],
+            "responses": ["Nous proposons différentes options de livraison, y compris la livraison standard et express à domicile, le Click & Collect pour les retraits en magasin, et la livraison aux casiers automatiques pour une collecte pratique."]
+        },
+        {
+            "tag": "options_paiement_ecommerce",
+            "patterns": ["Quels modes de paiement acceptez-vous ?", "Puis-je payer en plusieurs fois ?", "Le paiement à la livraison est-il possible ?"],
+            "responses": ["Nous acceptons divers modes de paiement, notamment les cartes de crédit, PayPal, Apple Pay, Google Pay, le paiement à la livraison et des plans de paiement échelonné pour les produits de grande valeur."]
+        },
+        {
+            "tag": "suivi_commande_ecommerce",
+            "patterns": ["Comment puis-je suivre ma commande ?", "Puis-je voir où en est ma commande ?", "Quel est le statut de ma commande ?"],
+            "responses": ["Vous pouvez suivre votre commande en temps réel en vous connectant à votre compte sur notre site. Nous envoyons également des mises à jour par e-mail à chaque étape du processus de livraison."]
+        },
+        {
+            "tag": "annulation_commande_ecommerce",
+            "patterns": ["Comment puis-je annuler ma commande ?", "Je veux annuler ma commande en ligne", "Puis-je obtenir un remboursement pour mon achat ?"],
+            "responses": ["Pour annuler votre commande, veuillez visiter votre tableau de bord sur notre plateforme e-commerce et suivre le processus d'annulation. Contactez notre équipe de support si vous avez besoin d'aide supplémentaire."]
+        },
+        {
+            "tag": "confirmation_commande_ecommerce",
+            "patterns": ["Pouvez-vous confirmer ma commande ?", "Je n'ai pas reçu la confirmation de ma commande", "Comment puis-je vérifier le statut de ma commande ?"],
+            "responses": ["Les confirmations de commande sont envoyées par e-mail. Si vous ne l'avez pas reçue, veuillez contacter notre équipe de support pour vérifier le statut de votre commande."]
+        },
+        {
+            "tag": "retours_ecommerce",
+            "patterns": ["Comment retourner un produit ?", "Puis-je obtenir un remboursement ?", "Quelle est votre politique de retour ?"],
+            "responses": ["Nous offrons une politique de retour flexible. Visitez votre tableau de bord pour obtenir des instructions détaillées sur la façon de retourner des articles, ou contactez notre équipe de support pour obtenir de l'aide."]
+        },
+        {
+            "tag": "frais_retour_ecommerce",
+            "patterns": ["Dois-je payer les frais de retour ?", "Le retour est-il gratuit ?", "Qui prend en charge les frais de retour ?"],
+            "responses": ["Les frais de retour peuvent varier en fonction de la raison du retour. Veuillez consulter notre politique de retour pour des détails spécifiques ou contacter notre support pour plus d'informations."]
+        },
+        {
+            "tag": "statut_retour_ecommerce",
+            "patterns": ["Quel est le statut de mon retour ?", "Avez-vous reçu mon article retourné ?", "Mon remboursement a-t-il été traité ?"],
+            "responses": ["Vous pouvez vérifier le statut de votre retour dans votre tableau de bord. Si vous avez des questions, contactez notre équipe de support pour une mise à jour."]
+        },
+        {
+            "tag": "personnalisation_ecommerce",
+            "patterns": ["Comment personnalisez-vous mon expérience d'achat ?", "Avez-vous des recommandations de produits ?", "Comment puis-je voir des offres personnalisées ?"],
+            "responses": ["Nous utilisons des algorithmes avancés pour fournir des recommandations de produits personnalisées en fonction de votre historique d'achat et de vos préférences. Vous pouvez également rejoindre notre programme de fidélité pour des offres exclusives."]
+        },
+        {
+            "tag": "avis_clients_ecommerce",
+            "patterns": ["Puis-je laisser un avis ?", "Comment puis-je évaluer un produit ?", "Puis-je voir les avis des clients ?"],
+            "responses": ["Oui, vous pouvez laisser un avis sur la page du produit après avoir effectué un achat. Les avis des clients sont également disponibles pour vous aider à prendre des décisions d'achat éclairées."]
+        },
+        {
+            "tag": "abonnement_ecommerce",
+            "patterns": ["Proposez-vous des abonnements ?", "Puis-je m'abonner pour des livraisons mensuelles ?", "Comment fonctionne votre service d'abonnement ?"],
+            "responses": ["Oui, nous proposons des services d'abonnement pour certains produits. Vous pouvez vous abonner à des livraisons mensuelles via les paramètres de votre compte."]
+        },
+        {
+            "tag": "cartes_cadeaux_ecommerce",
+            "patterns": ["Vendez-vous des cartes-cadeaux ?", "Comment puis-je acheter une carte-cadeau ?", "Puis-je utiliser une carte-cadeau pour le paiement ?"],
+            "responses": ["Nous proposons des cartes-cadeaux que vous pouvez acheter sur notre site. Elles peuvent être utilisées comme moyen de paiement pour tous nos produits."]
+        },
+        {
+            "tag": "programme_fidelite_ecommerce",
+            "patterns": ["Avez-vous un programme de fidélité ?", "Comment puis-je gagner des récompenses ?", "Quels sont les avantages de votre programme de fidélité ?"],
+            "responses": ["Oui, nous avons un programme de fidélité où vous pouvez gagner des points pour chaque achat, à échanger contre des réductions ou des offres spéciales. Inscrivez-vous via votre compte pour commencer à gagner des récompenses."]
+        },
+        {
+            "tag": "vente_sur_marketplace_ecommerce",
+            "patterns": ["Vendez-vous sur des marketplaces ?", "Puis-je acheter vos produits sur Amazon ?", "Vendez-vous sur eBay ?"],
+            "responses": ["Oui, nos produits sont disponibles sur différentes marketplaces comme Amazon et eBay. Consultez nos annonces en ligne pour plus d'informations."]
+        },
+        {
+            "tag": "promotions_ecommerce",
+            "patterns": ["Avez-vous des promotions ?", "Y a-t-il des réductions disponibles ?", "Comment puis-je obtenir un code promo ?"],
+            "responses": ["Nous proposons régulièrement des promotions et des réductions. Inscrivez-vous à notre newsletter ou consultez notre site pour rester informé des dernières offres et codes promo."]
+        },
+        {
+            "tag": "commandes_en_gros_ecommerce",
+            "patterns": ["Offrez-vous des réductions pour les achats en gros ?", "Puis-je passer une grosse commande ?", "Y a-t-il une réduction pour les achats en gros ?"],
+            "responses": ["Oui, nous proposons des réductions spéciales pour les achats en gros. Veuillez contacter notre équipe commerciale pour plus d'informations sur les commandes en gros et les tarifs."]
+        },
+        {
+            "tag": "precommandes_ecommerce",
+            "patterns": ["Puis-je précommander des produits ?", "Comment fonctionnent les précommandes ?", "Ce produit est-il disponible en précommande ?"],
+            "responses": ["Oui, vous pouvez précommander certains produits sur notre site. Les articles précommandés seront expédiés dès qu'ils seront disponibles."]
+        },
+        {
+            "tag": "services_bancaires",
+            "patterns": ["Quels services bancaires proposez-vous ?", "Pouvez-vous m'aider avec la banque en ligne ?", "Offrez-vous des intégrations bancaires ?"],
+            "responses": ["Nous offrons une gamme de services bancaires, y compris l'ouverture de comptes, les dépôts, les retraits, la banque en ligne, la banque mobile et des conseils financiers personnalisés."]
+        },
+        {
+            "tag": "ouverture_de_compte_bancaire",
+            "patterns": ["Comment puis-je ouvrir un compte ?", "Quels types de comptes proposez-vous ?", "Puis-je ouvrir un compte en ligne ?"],
+            "responses": ["Vous pouvez ouvrir différents types de comptes, tels que des comptes courants, d'épargne et d'investissement. Le processus peut être effectué en ligne ou dans l'une de nos agences."]
+        },
+        {
+            "tag": "types_de_comptes_bancaires",
+            "patterns": ["Quels types de comptes proposez-vous ?", "Offrez-vous des comptes d'épargne ?", "Puis-je ouvrir un compte professionnel ?"],
+            "responses": ["Nous proposons divers comptes, y compris des comptes courants personnels, des comptes d'épargne, des comptes professionnels et des comptes d'investissement. Consultez notre site web ou agence pour plus d'informations."]
+        },
+        {
+            "tag": "services_bancaires_en_ligne",
+            "patterns": ["Comment puis-je utiliser la banque en ligne ?", "Avez-vous une application bancaire ?", "Puis-je accéder à mon compte en ligne ?"],
+            "responses": ["Notre plateforme de banque en ligne vous permet de gérer vos comptes, d'effectuer des paiements et de consulter vos relevés. Nous proposons également une application bancaire mobile pour un accès facile à tout moment."]
+        },
+        {
+            "tag": "depots_retraits_bancaires",
+            "patterns": ["Comment puis-je déposer de l'argent ?", "Puis-je retirer de l'argent de mon compte ?", "Où puis-je trouver un distributeur automatique ?"],
+            "responses": ["Vous pouvez déposer et retirer de l'argent dans nos agences ou utiliser nos distributeurs automatiques pour un accès pratique. Pour les transactions importantes, veuillez visiter l'une de nos agences."]
+        },
+        {
+            "tag": "canaux_support_bancaire",
+            "patterns": ["Comment puis-je contacter le support bancaire ?", "Quel est le numéro de support bancaire ?", "Offrez-vous une assistance 24h/24 et 7j/7 ?"],
+            "responses": ["Notre équipe de support bancaire est disponible 24h/24 et 7j/7. Vous pouvez nous contacter par téléphone, e-mail ou chat. Nous proposons également une assistance via notre chatbot pour les demandes courantes."]
+        },
+        {
+            "tag": "services_prets_bancaires",
+            "patterns": ["Comment puis-je demander un prêt ?", "Puis-je obtenir un prêt personnel ?", "Quels prêts proposez-vous ?"],
+            "responses": ["Nous offrons divers types de prêts, y compris les prêts personnels, les prêts auto et les hypothèques. Contactez nos conseillers financiers pour des informations détaillées et de l'aide avec le processus de demande."]
+        },
+        {
+            "tag": "conseils_investissement_bancaire",
+            "patterns": ["Puis-je obtenir des conseils d'investissement ?", "Proposez-vous des services de gestion de patrimoine ?", "Comment puis-je investir mon argent ?"],
+            "responses": ["Oui, nous fournissons des services d'investissement et de gestion de patrimoine. Nos conseillers financiers peuvent vous aider à planifier vos investissements en fonction de vos objectifs et de votre tolérance au risque."]
+        },
+        {
+            "tag": "securite_bancaire",
+            "patterns": ["La banque en ligne est-elle sécurisée ?", "Utilisez-vous une authentification à deux facteurs ?", "Comment protégez-vous mes données ?"],
+            "responses": ["Votre sécurité est notre priorité. Nous utilisons des protocoles de chiffrement avancés, une authentification à deux facteurs et une surveillance régulière des systèmes pour protéger vos activités bancaires en ligne."]
+        },
+        {
+            "tag": "services_cartes_bancaires",
+            "patterns": ["Comment puis-je demander une carte de crédit ?", "Puis-je gérer ma carte en ligne ?", "Quels types de cartes proposez-vous ?"],
+            "responses": ["Nous proposons divers types de cartes, y compris les cartes de crédit, de débit et prépayées. Vous pouvez faire une demande via notre site web et gérer les paramètres de votre carte via notre application mobile."]
+        },
+        {
+            "tag": "incidents_bancaires",
+            "patterns": ["Comment signaler une carte perdue ?", "Que faire si je suspecte une fraude ?", "Comment puis-je bloquer ma carte ?"],
+            "responses": ["Si votre carte est perdue ou volée, contactez-nous immédiatement pour la bloquer. Vous pouvez également signaler des transactions frauduleuses via notre portail de banque en ligne ou notre application mobile."]
+        },
+        {
+            "tag": "prevention_fraude_bancaire",
+            "patterns": ["Comment prévenez-vous la fraude ?", "Quelles mesures de sécurité sont en place ?", "Proposez-vous des alertes de fraude ?"],
+            "responses": ["Nous avons mis en place des mesures robustes de prévention de la fraude, y compris la surveillance des transactions, les alertes pour activités suspectes et un service de blocage immédiat de la carte en cas de suspicion de fraude."]
+        },
+        {
+            "tag": "services_de_change_bancaires",
+            "patterns": ["Proposez-vous des services de change ?", "Puis-je échanger des devises ?", "Quels sont les taux de change ?"],
+            "responses": ["Oui, nous proposons des services de change à des taux compétitifs. Vous pouvez échanger des devises dans nos agences ou utiliser notre plateforme de banque en ligne pour certaines transactions."]
+        },
+        {
+            "tag": "calculateur_de_pret_bancaire",
+            "patterns": ["Avez-vous un calculateur de prêt ?", "Comment puis-je calculer mes paiements de prêt ?", "Quel est le taux d'intérêt sur mon prêt ?"],
+            "responses": ["Vous pouvez utiliser notre calculateur de prêt en ligne pour estimer vos paiements mensuels et les taux d'intérêt. Visitez notre site web pour accéder à cet outil."]
+        },
+        {
+            "tag": "services_de_virement_bancaires",
+            "patterns": ["Comment puis-je transférer de l'argent ?", "Puis-je effectuer un virement international ?", "Quels sont les frais de virement ?"],
+            "responses": ["Vous pouvez transférer de l'argent via notre plateforme de banque en ligne, notre application mobile ou dans une agence. Les virements internationaux peuvent entraîner des frais supplémentaires, qui seront affichés avant de finaliser la transaction."]
+        },
+        {
+            "tag": "support_technique",
+            "patterns": ["J'ai besoin d'assistance technique", "Comment résoudre ce problème ?", "Pouvez-vous m'aider avec un problème technique ?"],
+            "responses": ["Veuillez fournir plus de détails sur le problème que vous rencontrez. Nous proposons une assistance technique par téléphone, chat, e-mail et réseaux sociaux pour vous aider à dépanner et résoudre les problèmes."]
+        },
+        {
+            "tag": "support_technique_a_distance",
+            "patterns": ["Pouvez-vous fournir un support à distance ?", "Proposez-vous un dépannage à distance ?", "Comment pouvez-vous résoudre mon problème à distance ?"],
+            "responses": ["Oui, nous offrons un support à distance. Nos techniciens peuvent vous guider à travers le processus de dépannage par téléphone ou chat, ou prendre le contrôle de votre système à distance pour résoudre le problème."]
+        },
+        {
+            "tag": "support_en_magasin_technique",
+            "patterns": ["Puis-je apporter mon appareil pour réparation ?", "Proposez-vous un support en magasin ?", "Où puis-je faire réparer mon appareil ?"],
+            "responses": ["Vous pouvez apporter votre appareil dans l'un de nos centres de service pour une inspection ou une réparation. Contactez notre équipe de support pour trouver le lieu le plus proche et prendre rendez-vous."]
+        },
+        {
+            "tag": "guides_techniques",
+            "patterns": ["Avez-vous un guide d'utilisation ?", "Où puis-je trouver un guide de dépannage ?", "Pouvez-vous m'aider à utiliser ce produit ?"],
+            "responses": ["Nous fournissons des guides d'utilisation détaillés et des ressources de dépannage sur notre site web. Pour une assistance personnalisée, notre équipe de support est prête à vous aider."]
+        },
+        {
+            "tag": "maintenance_preventive_technique",
+            "patterns": ["Proposez-vous une maintenance préventive ?", "Puis-je obtenir des contrôles système réguliers ?", "Comment gérez-vous les mises à jour logicielles ?"],
+            "responses": ["Nous proposons une maintenance préventive, y compris des mises à jour logicielles et des contrôles réguliers du système. Nous envoyons également des notifications pour les mises à jour disponibles afin de maintenir votre système sécurisé et efficace."]
+        },
+        {
+            "tag": "systeme_de_tickets_technique",
+            "patterns": ["Comment soumettre un ticket de support ?", "Puis-je suivre ma demande de support ?", "Comment faire un suivi de mon problème ?"],
+            "responses": ["Vous pouvez soumettre un ticket de support via notre portail en ligne. Chaque ticket aura un ID unique pour suivre son statut. Notre équipe vous tiendra informé de l'avancement."]
+        },
+        {
+            "tag": "problemes_materiels_techniques",
+            "patterns": ["Mon appareil ne fonctionne pas", "Comment réparer mon matériel ?", "Pouvez-vous m'aider avec des problèmes matériels ?"],
+            "responses": ["Pour les problèmes liés au matériel, veuillez contacter notre équipe de support. Si nécessaire, nous pouvons organiser une inspection en magasin ou vous guider à travers un processus de dépannage à distance."]
+        },
+        {
+            "tag": "installations_techniques",
+            "patterns": ["Pouvez-vous m'aider avec l'installation d'un logiciel ?", "Comment puis-je installer ce programme ?", "Proposez-vous des services d'installation ?"],
+            "responses": ["Oui, nous pouvons vous aider avec les installations logicielles. Nos techniciens peuvent vous guider à travers le processus à distance ou organiser une installation en magasin si nécessaire."]
+        },
+        {
+            "tag": "problemes_reseau_techniques",
+            "patterns": ["Mon internet ne fonctionne pas", "Comment résoudre les problèmes de réseau ?", "Y a-t-il une panne de réseau ?"],
+            "responses": ["Si vous rencontrez des problèmes de réseau, veuillez redémarrer votre modem et votre routeur. Si le problème persiste, contactez notre équipe de support technique pour une assistance supplémentaire."]
+        },
+        {
+            "tag": "support_urgence_technique",
+            "patterns": ["J'ai besoin d'aide en urgence", "Mon système a planté", "Offrez-vous un support d'urgence ?"],
+            "responses": ["Pour les problèmes techniques urgents, veuillez contacter immédiatement notre hotline d'urgence disponible 24h/24 et 7j/7. Nous donnerons la priorité à votre demande pour minimiser les temps d'arrêt."]
+        },
+        {
+            "tag": "services_de_sauvegarde_technique",
+            "patterns": ["Proposez-vous des services de sauvegarde de données ?", "Comment puis-je sauvegarder mes données ?", "Pouvez-vous aider à la récupération des données ?"],
+            "responses": ["Oui, nous proposons des services de sauvegarde et de récupération de données. Contactez notre équipe de support technique pour en savoir plus sur la configuration des sauvegardes automatiques et la récupération des données perdues."]
+        },
+        {
+            "tag": "mises_a_niveau_systeme_techniques",
+            "patterns": ["Pouvez-vous aider à mettre à niveau mon système ?", "Comment puis-je mettre à niveau mon logiciel ?", "Proposez-vous des mises à niveau matérielles ?"],
+            "responses": ["Nous proposons des services de mise à niveau logicielle et matérielle. Nos techniciens peuvent vous guider à travers le processus à distance ou programmer une mise à niveau en magasin."]
+        },
+        {
+            "tag": "gestion_compte_ecommerce",
+            "patterns": ["Comment mettre à jour mes informations de compte ?", "Puis-je changer mon adresse e-mail ?", "Comment réinitialiser mon mot de passe ?"],
+            "responses": ["Vous pouvez mettre à jour les détails de votre compte en vous connectant et en accédant à la section 'Paramètres du compte'. Pour réinitialiser le mot de passe, utilisez le lien 'Mot de passe oublié' sur la page de connexion."]
+        },
+        {
+            "tag": "disponibilite_produits_ecommerce",
+            "patterns": ["Ce produit est-il en stock ?", "Quand cet article sera-t-il de nouveau en stock ?", "Avez-vous ce produit disponible ?"],
+            "responses": ["La disponibilité des produits peut être vérifiée directement sur la page du produit. Si un article est en rupture de stock, vous pouvez vous inscrire pour recevoir des notifications lorsqu'il sera de nouveau disponible."]
+        },
+        {
+            "tag": "commandes_personnalisees_ecommerce",
+            "patterns": ["Puis-je passer une commande personnalisée ?", "Proposez-vous des produits personnalisés ?", "Comment puis-je demander un produit personnalisé ?"],
+            "responses": ["Oui, nous proposons des options de personnalisation pour certains produits. Visitez la page du produit pour voir les fonctionnalités de personnalisation disponibles ou contactez notre équipe de support pour des demandes spéciales."]
+        },
+        {
+            "tag": "frais_bancaires",
+            "patterns": ["Quels sont vos frais ?", "Facturez-vous les retraits aux distributeurs automatiques ?", "Y a-t-il des frais pour les transferts internationaux ?"],
+            "responses": ["Nous avons une structure tarifaire transparente. Veuillez visiter notre site web ou contacter notre équipe de support pour un détail complet de nos frais de service."]
+        },
+        {
+            "tag": "taux_interet_bancaires",
+            "patterns": ["Quels sont vos taux d'intérêt actuels ?", "Proposez-vous des taux d'intérêt fixes ?", "Comment est calculé l'intérêt sur mon compte ?"],
+            "responses": ["Nos taux d'intérêt varient en fonction du type de compte ou de prêt. Vous pouvez trouver les taux les plus récents sur notre site web ou parler à un conseiller financier pour des informations personnalisées."]
+        },
+        {
+            "tag": "fermeture_compte_bancaire",
+            "patterns": ["Comment puis-je fermer mon compte ?", "Puis-je fermer mon compte en ligne ?", "Que se passe-t-il avec mes fonds lorsque je ferme mon compte ?"],
+            "responses": ["Pour fermer votre compte, veuillez visiter l'une de nos agences ou contacter notre service client. Assurez-vous que toutes les transactions en attente sont terminées avant de procéder à la fermeture."]
+        },
+        {
+            "tag": "reinitialisation_mot_de_passe_technique",
+            "patterns": ["Comment puis-je réinitialiser mon mot de passe ?", "J'ai oublié mon mot de passe", "Pouvez-vous m'aider à récupérer mon mot de passe ?"],
+            "responses": ["Vous pouvez réinitialiser votre mot de passe en cliquant sur le lien 'Mot de passe oublié' sur la page de connexion. Suivez les instructions envoyées à votre adresse e-mail enregistrée pour définir un nouveau mot de passe."]
+        },
+        {
+            "tag": "mises_a_jour_logiciel_techniques",
+            "patterns": ["Comment puis-je mettre à jour mon logiciel ?", "Y a-t-il une nouvelle version logicielle ?", "Pouvez-vous m'aider à installer les mises à jour ?"],
+            "responses": ["Vous pouvez vérifier les mises à jour logicielles via le menu 'Paramètres' de votre application. Pour toute assistance supplémentaire concernant les mises à jour, contactez notre équipe de support."]
+        },
+        {
+            "tag": "detection_fraude_ecommerce",
+            "patterns": ["Comment gérez-vous la fraude en ligne ?", "Que faire si mon paiement est compromis ?", "Mes informations personnelles sont-elles sécurisées ?"],
+            "responses": ["Nous utilisons des mesures avancées de détection de fraude pour protéger vos transactions. Si vous soupçonnez une activité frauduleuse, veuillez contacter immédiatement notre équipe de support."]
+        },
+        {
+            "tag": "gestion_liste_souhaits_ecommerce",
+            "patterns": ["Comment ajouter des articles à ma liste de souhaits ?", "Puis-je enregistrer des produits pour plus tard ?", "Où puis-je voir ma liste de souhaits ?"],
+            "responses": ["Vous pouvez ajouter des produits à votre liste de souhaits en cliquant sur le bouton 'Ajouter à la liste de souhaits' sur la page du produit. Consultez votre liste de souhaits dans les paramètres de votre compte pour un accès facile aux articles enregistrés."]
+        },
+        {
+            "tag": "historique_transactions_bancaires",
+            "patterns": ["Comment puis-je consulter mon historique de transactions ?", "Puis-je télécharger mon relevé bancaire ?", "Où puis-je trouver mes transactions récentes ?"],
+            "responses": ["Vous pouvez consulter et télécharger votre historique de transactions via notre plateforme de banque en ligne ou notre application mobile. Rendez-vous dans la section 'Transactions' ou 'Relevés' pour des enregistrements détaillés."]
+        },
+        {
+            "tag": "depannage_technique",
+            "patterns": ["Mon application ne répond pas", "Comment résoudre cette erreur ?", "Pourquoi mon appareil se fige-t-il ?"],
+            "responses": ["Essayez de redémarrer votre appareil et de fermer les applications inutilisées. Si le problème persiste, consultez notre guide de dépannage ou contactez notre équipe de support technique."]
+        },
+        {
+            "tag": "paiements_automatiques_bancaires",
+            "patterns": ["Comment puis-je configurer des paiements automatiques ?", "Puis-je programmer des paiements de factures ?", "Comment gérer les paiements récurrents ?"],
+            "responses": ["Vous pouvez configurer et gérer les paiements automatiques via notre plateforme de banque en ligne. Allez dans la section 'Paiements' pour programmer des paiements récurrents pour vos factures et abonnements."]
+        },
+        {
+            "tag": "recommandations_produits_ecommerce",
+            "patterns": ["Pouvez-vous me suggérer des produits ?", "Quels produits me recommandez-vous ?", "Avez-vous des recommandations de produits basées sur mon historique ?"],
+            "responses": ["Nous proposons des recommandations de produits personnalisées en fonction de votre historique de navigation et d'achat. Consultez la section 'Recommandé pour vous' sur notre page d'accueil pour des suggestions adaptées."]
+        },
+        {
+            "tag": "score_credit_bancaire",
+            "patterns": ["Comment puis-je vérifier mon score de crédit ?", "Ouvrir un compte affecte-t-il mon crédit ?", "Proposez-vous une surveillance du score de crédit ?"],
+            "responses": ["Vous pouvez surveiller votre score de crédit via notre plateforme de banque en ligne. Nous proposons des outils et des ressources pour vous aider à comprendre et gérer votre crédit."]
+        },
+        {
+            "tag": "comparaison_produits_ecommerce",
+            "patterns": ["Puis-je comparer les produits ?", "Comment comparer deux articles ?", "Avez-vous une fonction de comparaison de produits ?"],
+            "responses": ["Oui, notre site propose un outil de comparaison de produits qui vous permet de comparer les caractéristiques, spécifications et prix de différents produits pour vous aider à prendre une décision éclairée."]
+        },
+        {
+            "tag": "gestion_panier_ecommerce",
+            "patterns": ["Comment supprimer des articles de mon panier ?", "Puis-je enregistrer mon panier pour plus tard ?", "Pourquoi ne puis-je pas voir les articles de mon panier ?"],
+            "responses": ["Pour supprimer des articles de votre panier, rendez-vous sur la page du panier et cliquez sur le bouton 'Supprimer' à côté de l'article. Vous pouvez enregistrer votre panier en vous connectant à votre compte, afin que vos articles soient prêts lorsque vous reviendrez."]
+        },
+        {
+            "tag": "heures_support_clients_ecommerce",
+            "patterns": ["Quand le support client est-il disponible ?", "Quelles sont vos heures de support ?", "Puis-je contacter le support le week-end ?"],
+            "responses": ["Notre support client est disponible 24h/24 et 7j/7 pour vous aider. Vous pouvez nous joindre par téléphone, chat en direct ou e-mail à tout moment, y compris les week-ends et jours fériés."]
+        },
+        {
+            "tag": "points_fidelite_ecommerce",
+            "patterns": ["Comment puis-je échanger mes points de fidélité ?", "Puis-je utiliser mes points pour des réductions ?", "Où puis-je vérifier le solde de mes points de fidélité ?"],
+            "responses": ["Vous pouvez échanger vos points de fidélité à la caisse pour des réductions sur votre achat. Vérifiez le solde de vos points dans votre tableau de bord de compte sous la section 'Programme de fidélité'."]
+        },
+        {
+            "tag": "gestion_abonnement_ecommerce",
+            "patterns": ["Comment puis-je annuler mon abonnement ?", "Puis-je changer mon plan d'abonnement ?", "Où puis-je gérer mes abonnements ?"],
+            "responses": ["Vous pouvez gérer vos abonnements via les paramètres de votre compte. Pour annuler ou modifier votre plan, rendez-vous dans la section 'Abonnements' et suivez les instructions fournies."]
+        },
+        {
+            "tag": "verification_compte_bancaire",
+            "patterns": ["Comment puis-je vérifier mon compte ?", "Quels documents sont nécessaires pour la vérification ?", "Puis-je vérifier mon compte en ligne ?"],
+            "responses": ["Pour vérifier votre compte, vous devez fournir des documents d'identification tels qu'un passeport ou un permis de conduire. Téléchargez vos documents via notre plateforme de banque en ligne ou visitez une agence pour obtenir de l'aide."]
+        },
+        {
+            "tag": "releves_compte_bancaire",
+            "patterns": ["Comment puis-je obtenir mon relevé de compte ?", "Puis-je télécharger mon relevé en ligne ?", "Quand mon relevé mensuel sera-t-il disponible ?"],
+            "responses": ["Vous pouvez télécharger vos relevés de compte depuis notre plateforme de banque en ligne. Les relevés mensuels sont généralement disponibles au début de chaque mois dans la section 'Relevés'."]
+        },
+        {
+            "tag": "parametres_pare_feu_technique",
+            "patterns": ["Comment puis-je configurer mon pare-feu ?", "Pouvez-vous m'aider avec les paramètres du pare-feu ?", "Mon pare-feu bloque un programme, que dois-je faire ?"],
+            "responses": ["Pour configurer votre pare-feu, accédez aux paramètres via votre logiciel de sécurité. Si vous avez besoin d'aide, notre équipe de support technique peut vous guider à travers le processus pour assurer une protection optimale."]
+        },
+        {
+            "tag": "codes_promotionnels_ecommerce",
+            "patterns": ["Comment puis-je utiliser un code promo ?", "Où puis-je trouver des codes promo ?", "Mon code promo ne fonctionne pas, que dois-je faire ?"],
+            "responses": ["Pour utiliser un code promo, entrez-le dans le champ 'Code promo' lors du paiement. Si votre code ne fonctionne pas, veuillez vérifier sa date d'expiration ou contacter notre équipe de support pour obtenir de l'aide."]
+        },
+        {
+            "tag": "securite_paiement_ecommerce",
+            "patterns": ["Mes informations de paiement sont-elles sécurisées ?", "Comment protégez-vous mes données de carte de crédit ?", "Proposez-vous un paiement sécurisé ?"],
+            "responses": ["La sécurité de vos paiements est notre priorité. Nous utilisons des protocoles de chiffrement et des passerelles de paiement sécurisées pour protéger les détails de votre carte de crédit lors du processus de paiement."]
+        },
+        {
+            "tag": "depot_cheque_mobile_bancaire",
+            "patterns": ["Puis-je déposer un chèque avec mon téléphone ?", "Comment utiliser le dépôt de chèque mobile ?", "Le dépôt de chèque mobile est-il disponible dans votre application ?"],
+            "responses": ["Oui, vous pouvez déposer des chèques à l'aide de notre application bancaire mobile. Sélectionnez simplement 'Déposer un chèque' dans le menu de l'application et suivez les instructions à l'écran pour finaliser le dépôt."]
+        },
+        {
+            "tag": "difficultes_techniques_ecommerce",
+            "patterns": ["Pourquoi votre site ne se charge-t-il pas ?", "J'ai du mal à passer une commande", "Y a-t-il un problème avec votre site ?"],
+            "responses": ["Nous nous excusons pour le désagrément. Veuillez essayer de rafraîchir la page ou de vider le cache de votre navigateur. Si le problème persiste, contactez notre support technique pour une assistance supplémentaire."]
+        },
+        {
+            "tag": "code_pin_carte_debit_bancaire",
+            "patterns": ["Comment puis-je définir le code PIN de ma carte de débit ?", "Puis-je changer le code PIN de ma carte ?", "J'ai oublié mon code PIN, que dois-je faire ?"],
+            "responses": ["Vous pouvez définir ou changer le code PIN de votre carte de débit via notre application bancaire mobile ou à n'importe quel DAB. Si vous avez oublié votre code PIN, veuillez contacter notre équipe de support pour obtenir de l'aide."]
+        },
+        {
+            "tag": "garantie_produit_ecommerce",
+            "patterns": ["Ce produit est-il garanti ?", "Comment puis-je faire valoir ma garantie ?", "Quelle est votre politique de garantie des produits ?"],
+            "responses": ["La plupart de nos produits sont couverts par une garantie. Vous pouvez trouver les détails de la garantie sur la page du produit. Pour faire valoir une garantie, contactez notre équipe de support avec les détails de votre commande et une description du problème."]
+        },
+        {
+            "tag": "limites_virement_bancaire",
+            "patterns": ["Quelles sont les limites de transfert ?", "Puis-je augmenter ma limite de transfert ?", "Combien puis-je transférer en une journée ?"],
+            "responses": ["Les limites de transfert varient en fonction du type de compte et du statut de vérification. Consultez les paramètres de votre compte pour voir ou demander une augmentation des limites de transfert."]
+        },
+        {
+            "tag": "securite_compte_technique",
+            "patterns": ["Comment puis-je sécuriser mon compte ?", "Pouvez-vous m'aider avec l'authentification à deux facteurs ?", "Que dois-je faire si mon compte est compromis ?"],
+            "responses": ["Pour sécuriser votre compte, activez l'authentification à deux facteurs et utilisez un mot de passe fort. Si vous soupçonnez que votre compte est compromis, réinitialisez immédiatement votre mot de passe et contactez notre équipe de support."]
+        },
+        {
+            "tag": "emballage_cadeau_ecommerce",
+            "patterns": ["Proposez-vous un emballage cadeau ?", "Puis-je ajouter un message cadeau ?", "L'emballage cadeau est-il disponible ?"],
+            "responses": ["Oui, nous proposons un emballage cadeau et des messages personnalisés pour vos commandes. Vous pouvez sélectionner ces options lors du processus de paiement."]
+        },
+        {
+            "tag": "services_internationaux_bancaires",
+            "patterns": ["Puis-je utiliser ma carte à l'étranger ?", "Proposez-vous des services bancaires internationaux ?", "Y a-t-il des frais pour les transactions internationales ?"],
+            "responses": ["Oui, vous pouvez utiliser votre carte à l'étranger. Nous proposons divers services bancaires internationaux, y compris les transferts mondiaux. Des frais de transaction internationale peuvent s'appliquer, que vous trouverez dans notre grille tarifaire."]
+        },
+        {
+            "tag": "compatibilite_logiciel_technique",
+            "patterns": ["Ce logiciel est-il compatible avec mon système ?", "Quelles sont les exigences système ?", "Puis-je exécuter ce programme sur mon appareil ?"],
+            "responses": ["Vous pouvez trouver la compatibilité logicielle et les exigences système sur la page du produit. Si vous avez besoin d'aide supplémentaire, contactez notre équipe de support pour vérifier la compatibilité avec votre appareil."]
+        },
+        {
+            "tag": "retour_client_ecommerce",
+            "patterns": ["Comment puis-je donner mon avis ?", "Puis-je laisser une suggestion ?", "Où puis-je soumettre mon retour ?"],
+            "responses": ["Nous apprécions vos commentaires ! Vous pouvez nous faire part de votre retour via le formulaire de contact sur notre site ou en laissant un avis sur la page du produit."]
+        },
+        {
+            "tag": "virement_interne_bancaire",
+            "patterns": ["Comment transférer des fonds entre mes comptes ?", "Puis-je configurer des virements automatiques ?", "Quelles sont les étapes pour les virements internes ?"],
+            "responses": ["Pour transférer des fonds entre vos comptes, connectez-vous à votre banque en ligne et sélectionnez 'Transférer des fonds'. Vous pouvez également configurer des virements automatiques dans les paramètres de votre compte."]
+        },
+        {
+            "tag": "list_services",
+            "patterns": [
+                "Quels sont vos services?",
+                "Pouvez-vous me donner la liste de vos services?",
+                "Que proposez-vous comme services?",
+                "Je veux connaître vos services",
+                "What are your services?",
+                "Can you give me the list of your services?",
+                "What services do you offer?",
+                "I want to know your services"
+            ],
+            "responses": [
+                "Nous proposons trois types de services principaux: les services techniques, le commerce électronique, et les services bancaires. Veuillez préciser lequel vous intéresse pour plus de détails.",
+                "We offer three main types of services: technical services, e-commerce, and banking services. Please specify which one interests you for more details."
+            ]
+        },
+        {
+            "tag": "service_details",
+            "patterns": [
+                "Pouvez-vous me donner plus de détails sur les services techniques?",
+                "Qu'est-ce que vous proposez pour le commerce électronique?",
+                "Je veux en savoir plus sur les services bancaires.",
+                "Can you give me more details about technical services?",
+                "What do you offer for e-commerce?",
+                "I want to know more about banking services."
+            ],
+            "responses": [
+                "Nos services techniques incluent l'assistance technique, le dépannage, les installations et la maintenance des systèmes. Pour le commerce électronique, nous proposons des achats en ligne, des suivis de commandes, et des retours faciles. Nos services bancaires couvrent les comptes, les transactions, les prêts et la gestion financière.",
+                "Our technical services include technical support, troubleshooting, installations, and system maintenance. For e-commerce, we offer online shopping, order tracking, and easy returns. Our banking services cover accounts, transactions, loans, and financial management."
+            ]
+        },
+        {
+            "tag": "contact_methods",
+            "patterns": [
+                "Comment puis-je vous contacter?",
+                "Quels sont vos moyens de contact?",
+                "Je veux contacter le service client",
+                "Comment puis-je parler à un conseiller?",
+                "How can I contact you?",
+                "What are your contact methods?",
+                "I want to contact customer service",
+                "How can I speak with a representative?"
+            ],
+            "responses": [
+                "Vous pouvez nous contacter via notre chat en direct, par téléphone au [numéro], par e-mail à [adresse e-mail], ou via les réseaux sociaux. Nous sommes là pour vous aider 24h/24 et 7j/7.",
+                "You can contact us via live chat, by phone at [number], by email at [email address], or through social media. We are here to assist you 24/7."
+            ]
+        },
+        {
+            "tag": "open_specific_account",
+            "patterns": [
+                "Je veux ouvrir un compte d'épargne",
+                "Comment puis-je ouvrir un compte professionnel?",
+                "Quels sont les documents nécessaires pour ouvrir un compte courant?",
+                "Puis-je ouvrir un compte en ligne?",
+                "I want to open a savings account",
+                "How can I open a business account?",
+                "What documents are needed to open a current account?",
+                "Can I open an account online?"
+            ],
+            "responses": [
+                "Pour ouvrir un compte, vous aurez besoin de fournir des documents d'identification tels qu'une pièce d'identité et un justificatif de domicile. Le processus peut être effectué en ligne ou en agence.",
+                "To open an account, you will need to provide identification documents such as an ID and proof of address. The process can be completed online or at a branch."
+            ]
+        },
+        {
+            "tag": "ecommerce_services",
+            "patterns": [
+                "Quels sont vos services e-commerce?",
+                "Comment fonctionne votre plateforme de vente en ligne?",
+                "Quels produits puis-je acheter en ligne?",
+                "Avez-vous une application pour les achats en ligne?",
+                "What are your e-commerce services?",
+                "How does your online shopping platform work?",
+                "What products can I buy online?",
+                "Do you have an app for online shopping?"
+            ],
+            "responses": [
+                "Notre plateforme e-commerce vous permet de parcourir et d'acheter une large gamme de produits en ligne. Vous pouvez ajouter des articles à votre panier, les payer en toute sécurité, et choisir parmi différentes options de livraison. Notre application mobile offre une expérience d'achat encore plus personnalisée.",
+                "Our e-commerce platform allows you to browse and purchase a wide range of products online. You can add items to your cart, pay securely, and choose from various delivery options. Our mobile app offers an even more personalized shopping experience."
+            ]
+        },
+        {
+            "tag": "working_hours",
+            "patterns": [
+                "Quelles sont vos heures de travail?",
+                "Quels sont vos horaires d'ouverture?",
+                "Quand êtes-vous ouvert?",
+                "What are your working hours?",
+                "What are your opening hours?",
+                "When are you open?"
+            ],
+            "responses": [
+                "Nos heures de travail sont les suivantes: \nJours ouvrés: Lundi–Vendredi: de 9h à 20h, Samedi: de 9h à 17h. \nVacances: Tous les dimanches et les jours fériés.",
+                "Our working hours are as follows: \nWeekdays: Monday–Friday: 9 AM to 8 PM, Saturday: 9 AM to 5 PM. \nHolidays: Closed on Sundays and public holidays."
+            ]
+        },
+        {
+            "tag": "negative_response",
+            "patterns": [
+                "Non",
+                "Pas du tout",
+                "Ce n'est pas ce que je veux",
+                "Annuler",
+                "No",
+                "Not at all",
+                "That's not what I want",
+                "Cancel"
+            ],
+            "responses": [
+                "D'accord, je comprends. Pouvez-vous préciser ce que vous cherchez exactement ou comment je peux vous aider autrement?",
+                "Alright, I understand. Could you please specify what exactly you are looking for or how else I can assist you?"
+            ]
+        },
+        {
+    "tag": "achat_produits",
+    "patterns": [
+        "Je veux acheter un produit",
+        "Quels sont vos produits?",
+        "Quels articles vendez-vous?",
+        "Je souhaite voir vos articles disponibles"
+    ],
+    "responses": [
+        "Nous proposons une large gamme de produits, tels que [Liste des produits]. Voulez-vous des détails sur un produit en particulier ?"
+    ]
+},
+{
+    "tag": "default_response",
+    "patterns": [],
+    "responses": [
+        "Désolé, je n'ai pas compris votre demande. Pouvez-vous reformuler ou fournir plus de détails ?"
+    ]
+},
+{
+    "tag": "achat_produits",
+    "patterns": [
+        "I want to buy a product",
+        "What products do you have?",
+        "What items do you sell?",
+        "I wish to see your available items",
+        "Show me your products",
+        "Product list please",
+        "I need to purchase something",
+        "Can I see what you offer?",
+        "I want to buy something",
+        "Tell me about your products"
+    ],
+    "responses": [
+        "We offer a wide range of products such as [Product List]. Would you like details on a specific product?"
+    ]
+},
+{
+      "tag": "ecommerce_services",
+      "patterns": [
+        "Tell me about your e-commerce services",
+        "What e-commerce services do you offer?",
+        "I want to know about your online shopping options",
+        "Parlez-moi de vos services de e-commerce",
+        "Quels services de commerce électronique proposez-vous?",
+        "Je veux connaître vos options d'achat en ligne"
+      ],
+      "responses": [
+        "Our e-commerce services include online shopping, order tracking, easy returns, and more. Would you like more details on a specific service?",
+        "Nos services de commerce électronique incluent les achats en ligne, le suivi des commandes, les retours faciles, et bien plus. Souhaitez-vous plus de détails sur un service spécifique ?"
+      ]
+    },
+    {
+      "tag": "product_information",
+      "patterns": [
+        "What products do you offer?",
+        "I want to know about your products",
+        "Give me a list of your products",
+        "Quels produits proposez-vous?",
+        "Je veux en savoir plus sur vos produits",
+        "Donnez-moi la liste de vos produits"
+      ],
+      "responses": [
+        "We offer a wide range of products, including electronics, home appliances, clothing, and more. Please specify which category interests you.",
+        "Nous proposons une large gamme de produits, y compris des produits électroniques, des appareils électroménagers, des vêtements, et bien plus. Veuillez préciser la catégorie qui vous intéresse."
+      ]
+    },
+    {
+      "tag": "purchase_process",
+      "patterns": [
+        "How do I buy a product?",
+        "What is the process for purchasing?",
+        "I want to buy something",
+        "Comment puis-je acheter un produit?",
+        "Quel est le processus d'achat?",
+        "Je veux acheter quelque chose"
+      ],
+      "responses": [
+        "To buy a product, browse our catalog, add the items to your cart, and proceed to checkout. If you need assistance, feel free to ask!",
+        "Pour acheter un produit, parcourez notre catalogue, ajoutez les articles à votre panier, et procédez au paiement. Si vous avez besoin d'aide, n'hésitez pas à demander!"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "How can I track my order?",
+        "I want to check my order status",
+        "Où est ma commande?",
+        "Comment puis-je suivre ma commande?",
+        "Je veux vérifier le statut de ma commande"
+      ],
+      "responses": [
+        "You can track your order status by logging into your account and visiting the 'My Orders' section. Need help? Just let us know!",
+        "Vous pouvez suivre le statut de votre commande en vous connectant à votre compte et en visitant la section 'Mes Commandes'. Besoin d'aide? Faites-le nous savoir!"
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "How can I contact support?",
+        "I need to speak with customer service",
+        "Can I get help?",
+        "Comment puis-je contacter le support?",
+        "J'ai besoin de parler au service client",
+        "Puis-je obtenir de l'aide?"
+      ],
+      "responses": [
+        "You can contact our support team via email at support@company.com or call us at 123-456-7890. We're here to help!",
+        "Vous pouvez contacter notre équipe de support par e-mail à support@company.com ou nous appeler au 123-456-7890. Nous sommes là pour vous aider!"
+      ]
+    }
+
+
+
+
+
+    ]
+}
